@@ -105,3 +105,59 @@ public class RegisterActivity extends Activity {
 			super.handleMessage(msg);
 		}
 	};
+
+	private class EtusernameOnFocusChange implements OnFocusChangeListener {
+		@Override
+		public void onFocusChange(View v, boolean hasFocus) {
+			if (!username.hasFocus()) {
+				str = username.getText().toString().trim();
+				if (str == null || str.length() <= 0) {
+					Toast.makeText(RegisterActivity.this, "用户名不能为空", Toast.LENGTH_SHORT).show();
+					
+				} else {
+					new Thread(new Runnable() {
+						// 如果用户名不为空，那么将用户名提交到服务器上进行验证，看用户名是否存在，就像JavaEE中利用
+						// ajax一样，虽然你看不到但是它却偷偷摸摸做了很多
+						@Override
+						public void run() {
+							// 使用Map封装请求参数
+							Map<String, String> map = new HashMap<String, String>();
+							map.put("username", str);
+
+							// 定义发送请求的URL
+							String url = HttpUtil.BASE_URL
+									+ "servlet/CheckServlet";
+							String result = null;
+							try {
+								result = HttpUtil.postRequest(url, map);
+							} catch (Exception e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							System.out.println("result:" + result);
+							Message message = new Message();
+							message.obj = result;
+							handler.sendMessage(message);
+						}
+					}).start();
+				}
+			}
+		}
+	}
+
+	Handler handler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			String msgobj = msg.obj.toString();
+
+			if (msgobj.equals("t")) {
+				username.requestFocus();
+			Toast.makeText(RegisterActivity.this, "用户名" + str + "已存在", Toast.LENGTH_SHORT).show();
+			} else {
+				password.requestFocus();
+			}
+			super.handleMessage(msg);
+		}
+	};
+
+}
