@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:background="@drawable/book">
+
+    <TextView
+        android:id="@+id/bookselectTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="28dp"
+        android:text="查询图书信息"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bookselectTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookselectTV1"
+        android:layout_marginTop="34dp"
+        android:text="请输入要查询的图书的ID："
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/bookselectET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookselectTV2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/bookselectbtn"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/bookselectET"
+        android:layout_alignBottom="@+id/bookselectET"
+        android:layout_toRightOf="@+id/bookselectTV2"
+        android:background="@drawable/btn"
+        android:onClick="bookSelectLoad"
+        android:text="查询"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bookselectTV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookselectbtn"
+        android:layout_marginTop="25dp"
+        android:textColor="#f00"
+        android:textSize="20dp" />
+
+</RelativeLayout>

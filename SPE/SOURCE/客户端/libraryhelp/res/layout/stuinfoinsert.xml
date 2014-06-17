@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" 
+    android:background="@drawable/main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/stuinsertTV0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:text="插入学生信息"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET1"
+            android:layout_alignBottom="@+id/stuinsertET1"
+            android:text="ID    号:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stuinsertET1"
+            android:text="姓    名:"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/stuinsertbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/stuinsertET8"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:background="@drawable/btn"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="stuInsertLoad"
+            android:text="提交"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/stuinsertET8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stuinsertET7"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuinsertET6"
+            android:layout_below="@+id/stuinsertET6"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuinsertET5"
+            android:layout_below="@+id/stuinsertET5"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stuinsertET4"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stuinsertET3"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuinsertET2"
+            android:layout_below="@+id/stuinsertET2"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/stuinsertTV2"
+            android:layout_toRightOf="@+id/stuinsertTV4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/stuinsertET1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuinsertTV0"
+            android:layout_below="@+id/stuinsertTV0"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" >
+
+            <requestFocus />
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/stuinsertTV8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET8"
+            android:layout_alignBottom="@+id/stuinsertET8"
+            android:layout_alignParentLeft="true"
+            android:text="年    级:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET7"
+            android:layout_alignBottom="@+id/stuinsertET7"
+            android:layout_alignParentLeft="true"
+            android:text="专    业:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET6"
+            android:layout_alignBottom="@+id/stuinsertET6"
+            android:layout_alignParentLeft="true"
+            android:text="学    院:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET5"
+            android:layout_alignBottom="@+id/stuinsertET5"
+            android:layout_alignParentLeft="true"
+            android:text="性    别:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stuinsertTV2"
+            android:layout_marginTop="82dp"
+            android:text="身份证号:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuinsertTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuinsertET3"
+            android:layout_alignBottom="@+id/stuinsertET3"
+            android:layout_alignParentLeft="true"
+            android:text="密    码:"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>

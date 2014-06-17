@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="469dp"
+        android:background="@drawable/main"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/menuTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="学生信息管理"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    
+            <Button
+            android:id="@+id/menubtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/menubtn3"
+            android:layout_below="@+id/menuTV"
+            android:layout_marginTop="21dp"
+      
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="menuload1"
+            android:text="添加学生"
+            android:textSize="20dp" />        
+             <Button
+            android:id="@+id/menubtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/menubtn1"
+            android:layout_alignBottom="@+id/menubtn1"
+            android:layout_alignLeft="@+id/menubtn4"
+            
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="menuload2"
+            android:text="删除学生"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/menubtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/menubtn1"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="23dp"
+           
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="menuload3"
+            android:text="修改学生"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/menubtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/menubtn3"
+            android:layout_alignBottom="@+id/menubtn3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="52dp"
+           
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="menuload4"
+            android:text="查找学生"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>

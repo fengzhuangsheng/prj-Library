@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/stuupdateTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stuupdateTV0"
+            android:layout_marginTop="22dp"
+            android:text="ID    号:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/stuupdateET6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET5"
+            android:layout_below="@+id/stuupdateET5"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/stuupdateET7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET6"
+            android:layout_below="@+id/stuupdateET6"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/stuupdateET8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET7"
+            android:layout_below="@+id/stuupdateET7"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/stuupdateTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET2"
+            android:layout_alignBottom="@+id/stuupdateET2"
+            android:layout_alignParentLeft="true"
+            android:text="姓    名:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/stuupdateET3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET4"
+            android:layout_below="@+id/stuupdateET2"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/stuupdateET1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateTV1"
+            android:layout_alignBottom="@+id/stuupdateTV1"
+            android:layout_alignLeft="@+id/stuupdateET2"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/stuupdateET2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET3"
+            android:layout_below="@+id/stuupdateET1"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/stuupdateTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET3"
+            android:layout_alignBottom="@+id/stuupdateET3"
+            android:layout_alignParentLeft="true"
+            android:text="密    码:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuupdateTV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET4"
+            android:layout_alignBottom="@+id/stuupdateET4"
+            android:layout_alignParentLeft="true"
+            android:text="身份证号:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuupdateTV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET5"
+            android:layout_alignBottom="@+id/stuupdateET5"
+            android:layout_alignParentLeft="true"
+            android:text="性    别:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuupdateTV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET6"
+            android:layout_alignBottom="@+id/stuupdateET6"
+            android:layout_alignParentLeft="true"
+            android:text="学    院:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuupdateTV7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET7"
+            android:layout_alignBottom="@+id/stuupdateET7"
+            android:layout_alignParentLeft="true"
+            android:text="专    业:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuupdateTV8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/stuupdateET8"
+            android:layout_alignBottom="@+id/stuupdateET8"
+            android:layout_alignParentLeft="true"
+            android:text="年    级:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/stuupdateET5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateET4"
+            android:layout_below="@+id/stuupdateET4"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/stuupdateET4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/stuupdateTV0"
+            android:layout_below="@+id/stuupdateET3"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/stuupdateTV0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="更新学生信息"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/stuupdatebtn"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/stuupdateET8"
+            android:layout_below="@+id/stuupdateET8"
+            android:background="@drawable/btn"
+            android:onClick="stuUpdateLoad"
+            android:text="更新"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book" >
+
+    <TextView
+        android:id="@+id/bookdeleteTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="28dp"
+        android:text="删除图书信息"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/bookdeleteTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookdeleteTV1"
+        android:layout_marginTop="34dp"
+        android:text="请输入要删除的图书的ID："
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/bookdeleteET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bookdeleteTV2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/bookdeletebtn"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_alignBaseline="@+id/bookdeleteET"
+        android:layout_alignBottom="@+id/bookdeleteET"
+        android:layout_toRightOf="@+id/bookdeleteTV2"
+        android:background="@drawable/btn"
+        android:onClick="bookDeleteLoad"
+        android:text="删除"
+        android:textSize="20dp" />
+
+</RelativeLayout>

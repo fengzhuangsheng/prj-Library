@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fzs.libraryhelp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bookhelp"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.fzs.libraryhelp.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.LoginActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.RegisterActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.StuMenuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.InsertStuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.DeleteStuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.UpdateStuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.SelectStuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.MainMenuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.BookMenuActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.InsertBookActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.DeleteBookActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.UpdateBookActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.MainActivity" >
+        </activity>
+        <activity android:name="com.fzs.libraryhelp.SelectBookActivity" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

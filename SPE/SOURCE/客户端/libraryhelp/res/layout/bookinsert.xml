@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:background="@drawable/book"
+        android:gravity="center_vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/bookinsertTV0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bookinsertTV4"
+            android:text="插入图书信息"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookinsertTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bookinsertET1"
+            android:layout_alignBottom="@+id/bookinsertET1"
+            android:text="图书号:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookinsertTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bookinsertET1"
+            android:text="图书名:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/bookinsertET6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bookinsertET5"
+            android:layout_below="@+id/bookinsertET5"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/bookinsertET3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bookinsertET2"
+            android:layout_below="@+id/bookinsertET2"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/bookinsertTV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bookinsertET6"
+            android:layout_alignBottom="@+id/bookinsertET6"
+            android:layout_alignParentLeft="true"
+            android:text="在借状态:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookinsertTV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bookinsertET5"
+            android:layout_alignBottom="@+id/bookinsertET5"
+            android:layout_alignParentLeft="true"
+            android:text="类    别:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookinsertTV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bookinsertTV2"
+            android:layout_marginTop="82dp"
+            android:text="出版社:"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/bookinsertTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bookinsertET3"
+            android:layout_alignBottom="@+id/bookinsertET3"
+            android:layout_alignParentLeft="true"
+            android:text="图书作者:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/bookinsertET1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookinsertTV0"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/bookinsertTV3"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" >
+
+            <requestFocus />
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/bookinsertET2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bookinsertET1"
+            android:layout_alignTop="@+id/bookinsertTV2"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/bookinsertET4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bookinsertET3"
+            android:layout_below="@+id/bookinsertET3"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/bookinsertET5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bookinsertET4"
+            android:layout_below="@+id/bookinsertET4"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine|none"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/bookinsertbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/bookinsertET6"
+            android:layout_below="@+id/bookinsertET6"
+            android:background="@drawable/btn"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:onClick="bookInsertLoad"
+            android:text="提交"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</ScrollView>

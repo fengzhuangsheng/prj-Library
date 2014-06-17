@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" 
+    android:background="@drawable/main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp" >
+
+        <TextView
+            android:id="@+id/stustuselectETcTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="78dp"
+            android:layout_marginTop="26dp"
+            android:text="查找学生信息"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuselectTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stustuselectETcTV1"
+            android:layout_marginTop="36dp"
+            android:text="请输入要查找的学生的ID号："
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/stuselectET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stuselectTV2"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="textMultiLine" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/stuselectbtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/stuselectET"
+            android:layout_alignBottom="@+id/stuselectET"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/stuselectET"
+            android:background="@drawable/btn"
+            android:onClick="stuSelectLoad"
+            android:text="查询"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/stuselectTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stuselectET"
+            android:layout_marginTop="23dp"
+            android:textColor="#f00"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</ScrollView>
