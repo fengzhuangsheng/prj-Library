@@ -25,6 +25,8 @@ public class LoginServlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html;charset=utf-8");
+		response.setCharacterEncoding("utf-8");
+		request.setCharacterEncoding("utf-8");
 		UserDao dao = new UserDaoImpl();
 		// 获得客户端请求参数
 		String username = request.getParameter("username");
@@ -37,6 +39,7 @@ public class LoginServlet extends HttpServlet {
 
 				// 把验证的userId封装成JSONObject
 				JSONObject jsonObj = new JSONObject().put("username", username);
+				System.out.println(jsonObj.toString());
 				// 输出响应
 				response.getWriter().println(jsonObj.toString());
 

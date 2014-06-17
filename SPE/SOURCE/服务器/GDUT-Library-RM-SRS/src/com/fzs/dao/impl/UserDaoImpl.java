@@ -24,7 +24,7 @@ public class UserDaoImpl implements UserDao {
 		String sql = " select username,password from Userinfo where username=? and password=? ";
 		DBUtil util = new DBUtil();
 		Connection conn = util.openConnection();
-		System.out.print("数据库连接成功！");
+		System.out.println("数据库连接成功！");
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 
